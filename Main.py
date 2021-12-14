@@ -1,4 +1,4 @@
-#Vladimir Ovsyannikov
+#_Vladimir Ovsyannikov_
 #Russian Recipe Book
 
 #Welcome Statement
@@ -18,9 +18,9 @@ print("Today, we will learn how to make Borsht.")
 print("")
 
 #User eligibility, in terms of age
-age = int(input("How old are you?: "))
-userSkillRating = int(input("Rate your cooking skills from 1-10: "))
-if not (age > 18 and userSkillRating > 3):
+age = input("How old are you?: ")
+userSkillRating = input("Rate your cooking skills from 1-10: ")
+if not (int(age) > 18 and int(userSkillRating) > 3):
 	print("You are not eligible to cook.\n" "Please, exit this recipe book.")
 	exit()
 else:
@@ -164,6 +164,8 @@ food = [
 ]
 function_1(food)
 print("")
+#Defines function_1 in terms of food
+#Food is expressed within a list of ingredients
 
 #Motivational
 print("Cooking is as easy as")
